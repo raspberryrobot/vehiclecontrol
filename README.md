@@ -1,4 +1,4 @@
-# roverControl
+# rovercontrol
 
 Tested OK on Ubuntu 1804LTS.
 
