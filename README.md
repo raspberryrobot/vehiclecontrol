@@ -22,7 +22,13 @@ You should have these files:
 	/rover/bin/rover_video_module_TCP.py
 	/rover/bin/start.py
 
-Step 3 - Manage startup execution with cron 
+Step 3 - Fix program permissions
+
+	sudo -s
+	cd /rover/bin
+	chmod +x *.py
+
+Step 4 - Manage startup execution with cron 
 	
 Startup script: /rover/bin/start.py
 
