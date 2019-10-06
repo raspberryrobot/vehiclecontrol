@@ -8,10 +8,13 @@ Control system for RaspberryPi robotic vehicule
 
 Step 1 - Create a directory /rover/bin owned by user pi
 
-sudo -s
-cd /
-mkdir -P /rover/bin
-chown -R pi:pi /rover
+> sudo -s
+
+> cd /
+
+> mkdir -P /rover/bin
+
+> chown -R pi:pi /rover
 
 Step 2 - clone current repo in /rover/bin/
 
@@ -26,7 +29,7 @@ Step 3 - Manage startup execution with cron
 	
 Startup script: /rover/bin/start.py
 
-crontab -e
+> crontab -e
 
 Add the following line
 
