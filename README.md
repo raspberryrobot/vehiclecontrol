@@ -24,6 +24,8 @@ Step 1 - Create a directory /rover/bin owned by user pi
 
 Step 2 - clone current repo in /rover/bin/
 
+	git clone https://github.com/framboiserobot/rovercontrol
+
 You should have these files: 
 
 	/rover/bin/rover_control_module_UDP.py
