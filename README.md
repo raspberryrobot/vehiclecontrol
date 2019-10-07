@@ -1,4 +1,4 @@
-# vehiculecontrol
+# vehiclecontrol
 
 Control system for RaspberryPi robotic vehicule.
 
