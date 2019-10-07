@@ -1,10 +1,12 @@
 # rovercontrol
 
-Tested OK on Ubuntu 1804LTS.
+Control system for RaspberryPi robotic vehicule.
 
-Written in python3
+Tested OK with Raspbian Stretch on Raspberry Pi 3 B+.
 
-Control system for RaspberryPi robotic vehicule
+Motor control interface is Cytron HAT-MDD10.
+
+Written in python3.
 
 4 programs are provided:
 
