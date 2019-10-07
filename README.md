@@ -1,6 +1,6 @@
 # vehiclecontrol
 
-Control system for RaspberryPi robotic vehicule.
+Control system for RaspberryPi robotic vehicle.
 
 Tested OK with Raspbian Stretch on Raspberry Pi 3 B+.
 
