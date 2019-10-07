@@ -6,6 +6,13 @@ Written in python3
 
 Control system for RaspberryPi robotic vehicule
 
+4 programs are provided:
+
+	Motor control - rover_control_module_UDP.py
+	System commands - rover_system_module_TCP.py
+	Video server - rover_video_module_TCP.py
+	Startup script - start.py
+
 Step 1 - Create a directory /rover/bin owned by user pi
 
 	> sudo -s
@@ -24,9 +31,9 @@ You should have these files:
 
 Step 3 - Fix program permissions
 
-	sudo -s
-	cd /rover/bin
-	chmod +x *.py
+	> sudo -s
+	> cd /rover/bin
+	> chmod +x *.py
 
 Step 4 - Manage startup execution with cron 
 	
