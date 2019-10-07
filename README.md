@@ -22,7 +22,7 @@ Step 1 - Create a directory /rover/bin owned by user pi
 	> mkdir -P /rover/bin
 	> chown -R pi:pi /rover
 
-Step 2 - clone current repo in /rover/bin/
+Step 2 - Clone current repo in /rover/bin/
 
 	cd /rovver/bin
 	git clone https://github.com/framboiserobot/rovercontrol
