@@ -19,7 +19,7 @@ Step 1 - Create a directory /rover/bin owned by user pi
 
 	> sudo -s
 	> cd /
-	> mkdir -P /rover/bin
+	> mkdir -p /rover/bin
 	> chown -R pi:pi /rover
 
 Step 2 - Clone current repo in /rover/bin/
