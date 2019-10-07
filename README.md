@@ -1,4 +1,4 @@
-# rovercontrol
+# vehiculecontrol
 
 Control system for RaspberryPi robotic vehicule.
 
