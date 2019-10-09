@@ -51,3 +51,5 @@ Startup script: /rover/bin/start.py
 Add the following line
 
 	@reboot /rover/bin/start.py
+	
+Control programs will be started at next reboot
