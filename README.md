@@ -29,7 +29,7 @@ Step 2 - Clone current repo and copy files in directory /rover/bin
 	> mv ./vehiclecontrol/* ./bin
 	> rm ./vehiclecontrol
 
-You should have these files in directory /rover/bin: 
+You should have these files in directory /rover/bin
 
 	/rover/bin/rover_control_module_UDP.py
 	/rover/bin/rover_system_module_TCP.py
