@@ -52,4 +52,6 @@ Add the following line
 
 	@reboot /rover/bin/start.py
 	
+Step 5 - Reboot
+
 Control programs will be started at next reboot
