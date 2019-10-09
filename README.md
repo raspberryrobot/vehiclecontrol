@@ -22,12 +22,14 @@ Step 1 - Create a directory /rover/bin owned by user pi
 	> mkdir -p /rover/bin
 	> chown -R pi:pi /rover
 
-Step 2 - Clone current repo in /rover/bin/
+Step 2 - Clone current repo and copy files in directory /rover/bin/
 
-	> cd /rover/bin
+	> cd /rover
 	> git clone https://github.com/raspberryrobot/vehiclecontrol
+	> mv ./vehiclecontrol/* ./bin
+	> rm ./vehiclecontrol
 
-You should have these files: 
+You should have these files in directory /rover/bin: 
 
 	/rover/bin/rover_control_module_UDP.py
 	/rover/bin/rover_system_module_TCP.py
