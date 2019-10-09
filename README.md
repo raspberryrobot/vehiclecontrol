@@ -22,7 +22,7 @@ Step 1 - Create a directory /rover/bin owned by user pi
 	> mkdir -p /rover/bin
 	> chown -R pi:pi /rover
 
-Step 2 - Clone current repo and copy files in directory /rover/bin/
+Step 2 - Clone current repo and copy files in directory /rover/bin
 
 	> cd /rover
 	> git clone https://github.com/raspberryrobot/vehiclecontrol
