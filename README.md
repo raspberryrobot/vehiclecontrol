@@ -19,31 +19,28 @@ Step 1 - Create a directory /rover/bin owned by user pi
 
 	> sudo -s
 	> cd /
-	> mkdir -p /rover/bin
-	> chown -R pi:pi /rover
+	> mkdir /rover
+	> chown pi:pi /rover
 
 Step 2 - Clone current repo and copy files in directory /rover/bin
 
 	> cd /rover
 	> git clone https://github.com/raspberryrobot/vehiclecontrol
 
-You should have these files in directory /rover/bin
+You should have these files in directory /rover/vehiclecontrol
 
-	/rover/vehiclecontrol/rover_control_module_UDP.py
-	/rover/vehiclecontrol/rover_system_module_TCP.py
-	/rover/vehiclecontrol/rover_video_module_TCP.py
-	/rover/vehiclecontrol/start.py
+	rover_control_module_UDP.py
+	rover_system_module_TCP.py
+	rover_video_module_TCP.py
+	start.py
 
 Step 3 - Fix program permissions
 
-	> sudo -s
-	> cd /rover/bin
+	> cd /rover/vehiclecontrol
 	> chmod +x *.py
 
 Step 4 - Manage startup execution with cron 
 	
-Startup script: /rover/bin/start.py
-
 	> crontab -e
 
 Add the following line
