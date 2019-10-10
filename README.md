@@ -26,15 +26,13 @@ Step 2 - Clone current repo and copy files in directory /rover/bin
 
 	> cd /rover
 	> git clone https://github.com/raspberryrobot/vehiclecontrol
-	> mv ./vehiclecontrol/* ./bin
-	> rm ./vehiclecontrol
 
 You should have these files in directory /rover/bin
 
-	/rover/bin/rover_control_module_UDP.py
-	/rover/bin/rover_system_module_TCP.py
-	/rover/bin/rover_video_module_TCP.py
-	/rover/bin/start.py
+	/rover/vehiclecontrol/rover_control_module_UDP.py
+	/rover/vehiclecontrol/rover_system_module_TCP.py
+	/rover/vehiclecontrol/rover_video_module_TCP.py
+	/rover/vehiclecontrol/start.py
 
 Step 3 - Fix program permissions
 
@@ -50,7 +48,7 @@ Startup script: /rover/bin/start.py
 
 Add the following line
 
-	@reboot /rover/bin/start.py
+	@reboot /rover/vehiclecontrol/start.py
 	
 Step 5 - Reboot
 
