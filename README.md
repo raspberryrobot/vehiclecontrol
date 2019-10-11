@@ -17,15 +17,15 @@ Written in python3.
 
 Step 1 - Create a directory /rover/bin owned by user pi
 
-	> sudo -s
-	> cd /
-	> mkdir /rover
-	> chown pi:pi /rover
+	$ sudo -s
+	$ cd /
+	$ mkdir /rover
+	$ chown pi:pi /rover
 
 Step 2 - Clone current repo and copy files in directory /rover/bin
 
-	> cd /rover
-	> git clone https://github.com/raspberryrobot/vehiclecontrol
+	$ cd /rover
+	$ git clone https://github.com/raspberryrobot/vehiclecontrol
 
 You should have these files in directory /rover/vehiclecontrol
 
@@ -36,12 +36,12 @@ You should have these files in directory /rover/vehiclecontrol
 
 Step 3 - Fix program permissions
 
-	> cd /rover/vehiclecontrol
-	> chmod +x *.py
+	$ cd /rover/vehiclecontrol
+	$ chmod +x *.py
 
 Step 4 - Manage startup execution with cron 
 	
-	> crontab -e
+	$ crontab -e
 
 Add the following line
 
