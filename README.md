@@ -15,7 +15,7 @@ Written in python3.
 	Video server - rover_video_module_TCP.py
 	Startup script - start.py
 
-Step 1 - Create a directory /rover/bin owned by user pi
+Step 1 - Create a directory /rover owned by user pi
 
 	$ sudo -s
 	$ cd /
