@@ -38,15 +38,10 @@ AN2 = 12                	# set pwm2 pin on MD10-Hat
 AN1 = 13                	# set pwm1 pin on MD10-hat
 DIG2 = 26               	# set dir2 pin on MD10-Hat
 DIG1 = 24               	# set dir1 pin on MD10-Hat
-BEEP = 25                   # set beeper pin
-LIGHT = 11                  # set flashlight relay pin
 GPIO.setup(AN2, GPIO.OUT)   # set pin as output
 GPIO.setup(AN1, GPIO.OUT)   # set pin as output
 GPIO.setup(DIG2, GPIO.OUT)  # set pin as output
 GPIO.setup(DIG1, GPIO.OUT)  # set pin as output
-GPIO.setup(BEEP, GPIO.OUT)  # set pin as output
-GPIO.setup(LIGHT, GPIO.OUT) # set pin as output
-GPIO.output(LIGHT,GPIO.LOW) # light is OFF at start
 p1 = GPIO.PWM(AN1, 100)     # set pwm for M1
 p2 = GPIO.PWM(AN2, 100)     # set pwm for M2
 
@@ -106,20 +101,12 @@ def start_C2(ip,port):
         # ---------------------------------------------------------------------
         if PS2_msg_type == '10':
             b=data_array
-            button_A = data_array[2] # beep
-            button_B = data_array[3] # flashlight on/off (toggle)
-            #button_C = data_array[6] # low power
-            #button_D = data_array[8] # high power
-            if button_A == '1': GPIO.output(BEEP,GPIO.HIGH)
-            if button_B == '1': GPIO.output(LIGHT,not GPIO.input(LIGHT))
-            
+           
         # ---------------------------------------------------------------------
         # button up event
         # ---------------------------------------------------------------------
         if PS2_msg_type == '11': #button up
             b=data_array
-            button_A = data_array[2]
-            if button_A == '0': GPIO.output(BEEP,GPIO.LOW)
             
         # ---------------------------------------------------------------------
         # joystick event
