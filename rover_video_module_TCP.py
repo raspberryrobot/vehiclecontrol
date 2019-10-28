@@ -11,7 +11,7 @@ import sys
 # -----------------------------------------------------------------------------
 # Global definitions
 # -----------------------------------------------------------------------------
-DEBUG = True
+DEBUG = False
 VIDEO_RESOLUTION = (640,480)
 VIDEO_FRAMERATE = 24
 VIDEO_FORMAT = 'h264'
