@@ -12,7 +12,7 @@ import os
 # Global definitions
 # -----------------------------------------------------------------------------
 # show debug output
-DEBUG = True
+DEBUG = False
 
 # network 
 DEFAULT_IP      = '0.0.0.0'
